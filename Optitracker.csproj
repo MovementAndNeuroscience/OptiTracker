@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD3F5BD6-5800-46CF-BC2A-1593CA939C86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Optitracker</RootNamespace>
+    <AssemblyName>Optritracker</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="alglib318gpl_net2">
+      <HintPath>..\..\Users\tvh307\OneDrive - University of Copenhagen\Documents\MovementNeuroscience\LouiseOptitracker\alglib-csharp\lib-csharp-core\alglib318gpl_net2.dll</HintPath>
+    </Reference>
+    <Reference Include="alglib318gpl_net5">
+      <HintPath>..\..\Users\tvh307\OneDrive - University of Copenhagen\Documents\MovementNeuroscience\LouiseOptitracker\alglib-csharp\lib-csharp-core\alglib318gpl_net5.dll</HintPath>
+    </Reference>
+    <Reference Include="alglib318gpl_net5simd">
+      <HintPath>..\..\Users\tvh307\OneDrive - University of Copenhagen\Documents\MovementNeuroscience\LouiseOptitracker\alglib-csharp\lib-csharp-core\alglib318gpl_net5simd.dll</HintPath>
+    </Reference>
+    <Reference Include="MDOL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>MDOL\MDOL.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Zeroconf">
+      <HintPath>Libs\Mono.Zeroconf.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Zeroconf.Providers.Bonjour">
+      <HintPath>Libs\Mono.Zeroconf.Providers.Bonjour.dll</HintPath>
+    </Reference>
+    <Reference Include="NatNetML, Version=3.0.6362.29848, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Users\tvh307\OneDrive - University of Copenhagen\Documents\MovementNeuroscience\LouiseOptitracker\NatNetSDK\lib\x64\NatNetML.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty\NewtonSoft\Src\Newtonsoft.Json\bin\Debug\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RTClientSDK">
+      <HintPath>Libs\RTClientSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Debug.cs" />
+    <Compile Include="GUI\MoCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\MoCap.Designer.cs">
+      <DependentUpon>MoCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\tabInterface.cs" />
+    <Compile Include="GUI\Tobii.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Tobii.Designer.cs">
+      <DependentUpon>Tobii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Trigger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Trigger.Designer.cs">
+      <DependentUpon>Trigger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="RandomWalkStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomWalkStep.Designer.cs">
+      <DependentUpon>RandomWalkStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Treadmill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treadmill.Designer.cs">
+      <DependentUpon>Treadmill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVisual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVisual.Designer.cs">
+      <DependentUpon>FormVisual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoCapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoCapForm.Designer.cs">
+      <DependentUpon>MoCapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\MoCap.resx">
+      <DependentUpon>MoCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Tobii.resx">
+      <DependentUpon>Tobii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Trigger.resx">
+      <DependentUpon>Trigger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomWalkStep.resx">
+      <DependentUpon>RandomWalkStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treadmill.resx">
+      <DependentUpon>Treadmill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVisual.resx">
+      <DependentUpon>FormVisual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoCapForm.resx">
+      <DependentUpon>MoCapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit3.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optitracker", "Optitracker.csproj", "{BD3F5BD6-5800-46CF-BC2A-1593CA939C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTClientSDK.Net", "..\..\Users\tvh307\OneDrive - University of Copenhagen\Documents\MovementNeuroscience\LouiseOptitracker\RTClientSDK.Net-master\RTClientSDK.Net.csproj", "{0DF35107-DDE5-4E9E-9284-F5D05BB47146}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0711ECD0-2FBF-4EA6-BBFF-A7CD80065E4C}"
+	ProjectSection(SolutionItems) = preProject
+		Scene.cs = Scene.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD3F5BD6-5800-46CF-BC2A-1593CA939C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3F5BD6-5800-46CF-BC2A-1593CA939C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3F5BD6-5800-46CF-BC2A-1593CA939C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3F5BD6-5800-46CF-BC2A-1593CA939C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF35107-DDE5-4E9E-9284-F5D05BB47146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF35107-DDE5-4E9E-9284-F5D05BB47146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF35107-DDE5-4E9E-9284-F5D05BB47146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF35107-DDE5-4E9E-9284-F5D05BB47146}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15547837-A2EA-4662-97D1-1357B60A7106}
+	EndGlobalSection
+EndGlobal
